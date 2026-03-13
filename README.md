@@ -159,7 +159,7 @@ Running the full pipeline automatically performs:
 You can also run the steps manually:
 
     python debug/learn_dnn_misc_detector.py
-    python generate_SCC_outputs.py
+    python generate_SCC_outputs.py  #alrs used 0.01, 0.001, 0.001 and 0.02, 0.03, 0.04, 0.002, 0.003, 0.004,  0.0002, 0.0003, 0.0004 for comparsion of individual SCC vs Ensemble 
     python build_ensembles.py --dataset CUSTOM --fcc_alrs 0.01 0.001 0.0001 --ensemble_sizes 2 3 4
     python build_ensembles_sorted_accuracy.py --dataset CUSTOM --fcc_alrs 0.01 0.001 0.0001 --ensemble_sizes 2 3 4
     python compute_classifier_scc_stats.py
